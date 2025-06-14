@@ -16,9 +16,9 @@ function login() {
             <div className="bg-gray-200 rounded-full p-4">
               <img
                 className="w-12 h-12 rounded-full"
-                src="./public/profil.png"
+                src="/profil.png"
                 alt=""
-                srcset=""
+                srcSet=""
               />
             </div>
           </div>

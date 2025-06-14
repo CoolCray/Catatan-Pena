@@ -21,7 +21,7 @@ function detail() {
         />
 
         {/* Detail konten */}
-        <div class="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+        <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -31,7 +31,7 @@ function detail() {
             pariatur.
           </p>
 
-          <h3 class="font-bold mt-6 mb-2">Sebuah Sub-Judul Penting</h3>
+          <h3 className="font-bold mt-6 mb-2">Sebuah Sub-Judul Penting</h3>
 
           <p>
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -40,7 +40,7 @@ function detail() {
             laudantium, totam rem aperiam.
           </p>
 
-          <blockquote class="border-l-4 border-indigo-500 pl-4 italic text-gray-600 my-6">
+          <blockquote className="border-l-4 border-indigo-500 pl-4 italic text-gray-600 my-6">
             "Ini adalah bagian kutipan yang menarik dari artikel untuk
             menekankan sebuah poin penting."
           </blockquote>
