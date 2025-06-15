@@ -5,16 +5,18 @@ const Header = () => {
   const [show, setshow] = useState(false);
 
   const sidebarklik = () => {
-    setshow(true); 
+    setshow(true);
   };
   const isSidebarVisible = show ? "right-0" : "-right-50";
   const muncul = show ? "block" : "hidden";
 
   const outSidebar = () => {
     setshow(false);
-  }
+  };
 
   return (
+
+    // Navbar 
     <div className="px-[16px]">
       <div className="flex justify-between items-center my-[30.5px] w-full">
         <img className="w-56 h-auto" src="/Catatan Pena.svg" alt="Logo" />
@@ -28,10 +30,14 @@ const Header = () => {
 
       {/* Sidebar muncul jika isSidebarVisible true */}
       <div
-        className= {`bg-white fixed top-0 ${isSidebarVisible} w-44  h-full z-50 transition-all duration-500 shadow-2xl`}>
-        <Sidebar /> 
+        className={`bg-white fixed top-0 ${isSidebarVisible} w-44  h-full z-50 transition-all duration-500 shadow-2xl`}
+      >
+        <Sidebar />
       </div>
-      <div onClick={outSidebar} className={`bg-amber-600 opacity-0 h-screen ${muncul} w-screen fixed z-10`}></div>
+      <div
+        onClick={outSidebar}
+        className={`bg-amber-600 opacity-0 h-screen ${muncul} w-screen fixed z-10`}
+      ></div>
     </div>
   );
 };

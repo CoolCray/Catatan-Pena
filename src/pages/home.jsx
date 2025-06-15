@@ -7,7 +7,7 @@ import Footer from '../layout/footer';
 function home() {
 
   return (
-    <div>
+    <div className='w-screen h-screen flex flex-col'>
       <Header />
       <Content />
       <Footer />
