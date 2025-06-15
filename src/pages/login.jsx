@@ -67,9 +67,16 @@ function login() {
           </form>
         </div>
         {/* Buat Navigation */}
-        <div className="flex w-full justify-between my-10 text-sm">
-          <button onClick={() => navigate("/")}> ← Back </button>
-          <button>Next →</button>
+        <div className="flex w-full lg:px-14 sm:px-10 justify-between my-10 text-sm ">
+          <button
+            onClick={() => navigate("/")}
+            className="text-gray-600 hover:text-black"
+          >
+            ← Back to Home
+          </button>
+          <button className="text-gray-600 hover:text-black">
+            
+          </button>
         </div>
       </div>
 

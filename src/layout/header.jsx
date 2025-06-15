@@ -1,7 +1,13 @@
 import Sidebar from "./sidebar";
 import { useState } from "react";
+import {  useNavigate } from "react-router-dom";
+
 
 const Header = () => {
+ // Inisialisasi useNavigate untuk navigasi 
+  const navigate = useNavigate();
+
+  // State untuk mengontrol visibilitas sidebar
   const [show, setshow] = useState(false);
 
   const sidebarklik = () => {
@@ -15,11 +21,15 @@ const Header = () => {
   };
 
   return (
-
-    // Navbar 
+    // Navbar
     <div className="px-[16px]">
       <div className="flex justify-between items-center my-[30.5px] w-full">
-        <img className="w-56 h-auto" src="/Catatan Pena.svg" alt="Logo" />
+        <img
+          onClick={() => navigate("/")}
+          className="w-56 h-auto"
+          src="/Catatan Pena.svg"
+          alt="Logo"
+        />
         <img
           onClick={sidebarklik}
           className="h-10 cursor-pointer"
@@ -36,7 +46,7 @@ const Header = () => {
       </div>
       <div
         onClick={outSidebar}
-        className={`bg-amber-600 opacity-0 h-screen ${muncul} w-screen fixed z-10`}
+        className={`bg-amber-600  opacity-0 h-screen ${muncul} w-screen fixed z-10`}
       ></div>
     </div>
   );
