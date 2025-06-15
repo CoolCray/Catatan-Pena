@@ -21,16 +21,46 @@ const content = () => {
             id: 3,
             title: "Technology Trends",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            image: "/public/konten3.png",
+            image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop",
         },
         {
             id: 4,
             title: "Health and Wellness",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            image: "/public/konten4.png",
+            image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1999&auto=format&fit=crop",
         },
-
     ]
+
+    const Categories = [
+      // Kategori Utama
+      "Perjalanan", // Travel & Adventure
+      "Kesehatan", // Health & Wellness
+      "Teknologi", // Technology
+      "Gaya Hidup", // Lifestyle
+      "Makanan & Minuman", // Food & Drink
+      "Keuangan", // Finance & Business
+      "Pengembangan", // Self-Improvement
+      "Olahraga", // Sports
+      "Seni & Budaya", // Arts & Culture
+      "Otomotif", // Automotive
+
+      // Sub-kategori atau Kategori Spesifik
+      "Fesyen", // Fashion
+      "Kecantikan", // Beauty
+      "Hubungan", // Relationships
+      "Karier", // Career
+      "Pendidikan", // Education
+      "Sains", // Science
+      "Gaming", // Gaming
+      "Film & Serial TV", // Movies & TV Shows
+      "Musik", // Music
+      "Fotografi", // Photography
+      "Parenting", // Parenting
+      "Dekorasi Rumah", // Home Decor
+      "Sejarah", // History
+      "Berita", // News
+      "Produktifitas", // Productivity
+    ];
     
   return (
     <div className="px-[16px]">
@@ -54,15 +84,9 @@ const content = () => {
             </div>
             <div className='flex flex-col gap-4 bg p-4 shadow-xl rounded-xl items-center text-[12px] mb-[16px]'>
             <h3 className='font-semibold text-sm'>Categories</h3>
-            <a href="">Perjalanan</a>
-            <a href="">Kesehatan</a>
-            <a href="">Ikan</a>
-            <a href="">Game</a>
-            <a href="">IT</a>
-            <a href="">IT</a>
-            <a href="">IT</a>
-            <a href="">IT</a>
-            <a href="">IT</a>
+            {Categories.map((category, index) => (
+            <a key={index} href="" className='text-[#1B998B] hover:underline text-center'>{category}</a>
+            ))}
             </div>
         </div>
         
