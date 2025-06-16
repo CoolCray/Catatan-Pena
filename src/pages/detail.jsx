@@ -19,7 +19,7 @@ function detail() {
     */}
       <div className=" mx-auto px-4 sm:px-6 lg:px-24 pb-8 md:py-12">
         {/* Judul */}
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
+        <h1 className="text-2xl md:text-3xl uppercase lg:text-4xl font-semibold mb-4 md:mb-6 text-gray-900">
           Stocks making the biggest
         </h1>
 

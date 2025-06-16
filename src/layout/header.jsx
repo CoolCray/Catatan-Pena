@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     // Navbar
-    <div className="px-[16px]">
+    <div className="px-[16px] lg:px-10 ">
       <div className="flex justify-between items-center my-[30.5px] w-full">
         <img
           onClick={() => navigate("/")}
